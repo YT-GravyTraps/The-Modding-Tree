@@ -1,5 +1,5 @@
 // ************ Themes ************
-var themes = ["default", "aqua"]
+var themes = ["default", "aqua", "white"]
 
 var colors = {
 	default: {
@@ -17,6 +17,16 @@ var colors = {
 		2: "#8fa7bf",
 		3: "#5f6f7f",
 		color: "#bfdfff",
+		points: "#dfefff",
+		locked: "#c4a7b3",
+		background: "#001f3f",
+		background_tooltip: "rgba(0, 15, 31, 0.75)",
+	},
+	white: {
+		1: "#ffffff",
+		2: "#ffffff",
+		3: "#ffffff",
+		color: "#ffffff",
 		points: "#dfefff",
 		locked: "#c4a7b3",
 		background: "#001f3f",
