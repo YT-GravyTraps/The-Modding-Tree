@@ -38,7 +38,7 @@ addLayer("Bs", {
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
     resource: "Baumstamm", // Name of prestige currency
     baseResource: "Ast", // Name of resource prestige is based on
-    baseAmount() {return player.Ast.points}, // Get the current amount of baseResource
+    baseAmount() {return player.A.points}, // Get the current amount of baseResource
     type: "static", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
     row: 0, // Row the layer is in on the tree (0 is the first row)
@@ -59,7 +59,7 @@ addLayer("B", {
     requires: new Decimal(10), // Can be a function that takes requirement increases into account
     resource: "Literal Baum", // Name of prestige currency
     baseResource: "Baumstamm", // Name of resource prestige is based on
-    baseAmount() {return player.points}, // Get the current amount of baseResource
+    baseAmount() {return player.Bs.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.75, // Prestige currency exponent
     gainMult() { // Calculate the multiplier for main currency from bonuses
